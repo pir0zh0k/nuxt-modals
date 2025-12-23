@@ -1,6 +1,6 @@
 {
   "name": "@pir0zh0k/nuxt-modals",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Типизированная система управления модальными окнами для Nuxt 3/4 с поддержкой TypeScript и SSR",
   "keywords": [
     "nuxt",
