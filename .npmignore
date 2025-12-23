@@ -1,0 +1,29 @@
+# Development files
+playground/
+test/
+node_modules/
+.pnpm-store/
+
+# Configuration files
+.eslintcache
+*.log
+*.local
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Misc
+.DS_Store
+coverage/
+*.tsbuildinfo
+
