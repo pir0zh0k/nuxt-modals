@@ -6,7 +6,6 @@ import {
 } from '@nuxt/kit'
 
 export type * from './runtime/lib/types'
-export * from './runtime/lib/utils'
 
 /**
  * Nuxt модуль для управления модальными окнами.
@@ -31,6 +30,18 @@ export default defineNuxtModule({
       name: 'useInitModalConfig',
       as: 'useInitModalConfig',
       from: resolver.resolve('runtime/lib/useInitModalConfig'),
+    })
+
+    addImports({
+      name: 'createModalVariants',
+      as: 'createModalVariants',
+      from: resolver.resolve('runtime/lib/utils/createModalVariants'),
+    })
+
+    addImports({
+      name: 'createModalConfig',
+      as: 'createModalConfig',
+      from: resolver.resolve('runtime/lib/utils/createModalConfig'),
     })
 
     addComponent({

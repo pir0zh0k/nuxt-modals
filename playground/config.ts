@@ -1,4 +1,3 @@
-import { createModalVariants, createModalConfig } from '../src/types'
 import BaseModal from './components/BaseModal.vue'
 import BaseModalInner from './components/BaseModalInner.vue'
 import SlimModal from './components/SlimModal.vue'
