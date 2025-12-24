@@ -5,7 +5,8 @@ import {
   addComponent,
 } from '@nuxt/kit'
 
-export type * from './types'
+export type * from './runtime/lib/types'
+export * from './runtime/lib/utils'
 
 /**
  * Nuxt модуль для управления модальными окнами.

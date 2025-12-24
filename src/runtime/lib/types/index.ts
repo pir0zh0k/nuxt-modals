@@ -102,37 +102,6 @@ export type CreateModalConfig<
 > = TConfig
 
 /**
- * Создает типизированный массив вариантов модальных окон.
- * Помогает TypeScript вывести конкретные типы ключей.
- *
- * @param variants - Массив вариантов модальных окон
- * @returns Типизированный массив вариантов
- */
-export function createModalVariants<
-  const TVariants extends readonly IModalVariant[],
->(variants: TVariants): TVariants {
-  return variants
-}
-
-/**
- * Создает типизированную конфигурацию модальных окон.
- * Помогает TypeScript вывести конкретные типы ключей и обеспечить соответствие вариантам.
- *
- * @param variants - Массив вариантов модальных окон
- * @param config - Конфигурация модальных окон
- * @returns Типизированную конфигурацию модальных окон
- */
-export function createModalConfig<
-  TVariants extends readonly IModalVariant[],
-  const TConfig extends Record<
-    string,
-    { variant: ExtractVariantKeys<TVariants>; component: Component }
-  >,
->(variants: TVariants, config: TConfig): TConfig {
-  return config
-}
-
-/**
  * Извлекает ключи из конфигурации модальных окон.
  *
  * @template TConfig - Конфигурация модальных окон
