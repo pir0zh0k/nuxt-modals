@@ -3,7 +3,7 @@ import type { Component } from 'vue'
 import {
   createModalVariants,
   createModalConfig,
-} from '../src/runtime/lib/types'
+} from '../src/runtime/lib/utils'
 import type { IModalVariant } from '../src/runtime/lib/types'
 
 // Mock компоненты Vue
